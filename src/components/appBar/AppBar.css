@@ -1,0 +1,70 @@
+.AppBar {
+  width: 100%;
+  height: 60px;
+  background-color: var(--color-grayscale-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AppBar_nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AppBar_nav img {
+  height: 80%;
+  width: 35vmin;
+  max-width: 170px;
+  object-fit: contain;
+  padding: 0px 10px 0px 15px;
+}
+
+.AppBar_search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.AppBar_search input {
+  width: 20vmin;
+}
+
+.AppBar_search button {
+  box-shadow: 0px 0px 5px var(--color-grayscale-3) !important;
+  margin-left: -30px;
+  background-color: var(--color-grayscale-4);
+}
+
+.AppBar_search svg {
+  color: var(--color-tertiary);
+}
+
+.AppBar_user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-grayscale-1);
+}
+
+.AppBar_user svg {
+  padding: 0px 15px 0px 10px;
+  color: var(--color-grayscale-2);
+}
+
+.AppBar_user img {
+  padding: 0px 15px 0px 10px;
+  border-radius: 50%;
+  width: 10vmin;
+  max-width: 50px;
+}
+
+.AppBar_user img,
+.AppBar_user svg,
+.AppBar_user p {
+  cursor: pointer;
+}

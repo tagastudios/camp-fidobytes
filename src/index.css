@@ -1,0 +1,103 @@
+/* IMPORTS FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* GENERAL RULES */
+
+:root {
+  --color-primary: #253b3a;
+  --color-secondary: #51c0cc;
+  --color-tertiary: #cffeff;
+  --color-grayscale-1: #f5f5f5;
+  --color-grayscale-2: #cccccc;
+  --color-grayscale-3: #9c9c9c;
+  --color-grayscale-4: #2d3839;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  padding: 10px 10px;
+  box-shadow: var(--color-grayscale-2) 1px 1px 12px;
+  border: none;
+  color: var(--color-tertiary);
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 6px white;
+  font-weight: 500;
+  transform: scale(1.15);
+}
+
+/* UPLOADER */
+
+.uploader {
+  position: fixed;
+  bottom: 0px;
+  transform: translateX(calc(50vw - 50%));
+}
+
+.uploader button {
+  width: 100vw;
+  height: 50px;
+  border-radius: 0;
+}
+
+/* BACKGROUDS */
+
+.bg_pattern {
+  background: url(./images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg_pattern-color1 {
+  background-color: #253b3a75;
+}
+
+/* SELECTOR */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* HIDE ON SIZES */
+
+@media screen and (max-width: 340px) {
+  .hide-on-xsmall {
+    display: none;
+  }
+}

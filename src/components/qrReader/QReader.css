@@ -1,0 +1,29 @@
+.Daycare_box_search_QR section {
+  z-index: 10;
+  border-radius: 10px !important;
+}
+
+.Daycare_box_search_QR {
+  width: 320px !important;
+  background-color: var(--color-secondary) !important;
+  border: var(--color-secondary) 10px solid !important;
+  border-radius: 10px !important;
+  position: fixed !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 1;
+  transform: translate(-79.5%, -42%) !important;
+}
+
+.Daycare_box_search_QR-text {
+  width: 320px !important;
+  background-color: var(--color-tertiary) !important;
+  border: var(--color-primary) 10px solid !important;
+  border-radius: 10px !important;
+  position: fixed !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 1000;
+  transform: translate(-79%, 340%) !important;
+  font-size: 1rem !important;
+}

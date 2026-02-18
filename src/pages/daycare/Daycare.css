@@ -1,0 +1,309 @@
+.Daycare {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  overflow: hidden;
+}
+
+.Daycare_title {
+  color: var(--color-secondary);
+  text-shadow: 2px 2px 2px black;
+  font-size: 2.5rem;
+  padding: 5px 0px 10px 0px;
+  text-align: center;
+}
+
+.Daycare_box {
+  height: calc(100% - (2.5rem + 27px));
+  margin: 0px auto;
+  max-width: 800px;
+}
+
+.Daycare_box_search {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-grayscale-1);
+  padding: 10px 10px 12px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px var(--color-grayscale-2);
+  margin: 0 15px;
+  height: 70px;
+}
+
+.Daycare_box_search_bar_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.Daycare_box_search_bar_input input {
+  flex: 1;
+  height: 25px;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 5px;
+}
+
+/* .Daycare_box_search_bar_input input:focus {
+  outline: none;
+} */
+
+.Daycare_box_search_bar_input button {
+  margin-left: -10px;
+}
+
+.Daycare_box_search_bar p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.Daycare_box_search_scan {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.Daycare_box_search_scan img {
+  width: 20px;
+  position: absolute;
+  top: 18px;
+  right: -10px;
+  transform: rotate(-45deg);
+}
+
+.Daycare_box_search_scan p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.Daycare_box_search_scan button {
+  font-size: 1.1rem;
+  padding: 0.48rem;
+  width: 35px;
+}
+
+/*
+
+
+SCAN QR CAMERA
+
+
+*/
+
+/* .Daycare_box_search_QR {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: red !important;
+  transform: translateX(-50%);
+  transform: translateY(-10%);
+} */
+
+.Daycare_box_daily {
+  background-color: var(--color-grayscale-1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px var(--color-grayscale-2);
+  margin: 20px 15px;
+  /* min-height: 100vmin; */
+  overflow: scroll;
+  height: calc(100% - 145px);
+}
+
+.Daycare_box_daily_date {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 0px solid var(--color-grayscale-2);
+  box-shadow: var(--color-grayscale-2) 0px 1px 1px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.Daycare_box_daily_date_arrow-1,
+.Daycare_box_daily_date_arrow-2 {
+  cursor: pointer;
+}
+
+.Daycare_box_daily_date_arrow-1:hover {
+  transform: scale(1.8);
+}
+
+.Daycare_box_daily_date_arrow-2:hover {
+  transform: scale(1.8);
+}
+
+.Daycare_box_daily_stats {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.Daycare_box_daily_stat_1 {
+  border-right: 1px solid var(--color-grayscale-2);
+  box-shadow: var(--color-grayscale-2) 0.5px 0px 0px;
+  margin-right: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.Daycare_box_daily_stat_1 b {
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.Daycare_box_daily_stat_2 b {
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+/*
+//////////////////
+////////////////////////////////////
+//////////////////
+//////////////////////////////////////////////////////
+////////////////////////////////////
+//////////////////////////////////////////////////////
+////////////////////////////////////
+//////////////////
+//////////////////
+//////////////////
+//////////////////////////////////////////////////////
+////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+
+
+
+TABLES
+
+
+
+
+
+//////////////////
+////////////////////////////////////
+//////////////////
+//////////////////////////////////////////////////////
+////////////////////////////////////
+//////////////////////////////////////////////////////
+////////////////////////////////////
+//////////////////
+//////////////////
+//////////////////
+//////////////////////////////////////////////////////
+////////////////////////////////////
+//////////////////////////////////////////////////////
+*/
+
+.Daycare_box_daily_list {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.Daycare_box_daily_list_title {
+  background-color: var(--color-primary);
+}
+
+.Daycare_box_daily_list_title th:not(:first-child) {
+  width: 24.5%;
+  color: var(--color-secondary);
+  padding: 5px 0;
+}
+
+.Daycare_box_daily_list_data tr {
+  border-bottom: 0px solid var(--color-grayscale-2);
+  box-shadow: var(--color-grayscale-2) 0px 1px 1px;
+}
+
+.Daycare_box_daily_list_data td:not(:first-child) {
+  width: 20%;
+  padding: 5px 0;
+}
+
+.Daycare_box_daily_list_data td:first-child {
+  position: relative;
+}
+
+.Daycare_box_daily_list_data button {
+  width: 26px;
+  height: 26px;
+  margin: 4vmin 1.5px;
+  border-radius: 6px;
+  color: var(--color-tertiary);
+}
+
+.Daycare_box_daily_list_data td:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.Daycare_box_daily_list_data td span:nth-child(2) {
+  margin-left: 5px;
+}
+
+.Daycare_box_daily_list_data_dog {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.Daycare_box_daily_list_data_people {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.Daycare_box_daily_list_color {
+  min-width: 4px;
+}
+
+.Daycare_box_daily_list_vax {
+  flex-wrap: wrap;
+  max-width: 10px !important;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Daycare_box_daily_list_actions button svg {
+  transform: translate(-20%, -30%);
+}
+
+/*
+***************
+**********************
+*****************
+*********************************************
+****************************
+*************************************
+*******************
+******
+
+MEDIA QUERIES
+
+*/
+
+@media screen and (max-width: 340px) {
+  .Daycare_box_daily_list_data td:not(:first-child) {
+    width: 35%;
+    padding: 5px 0;
+  }
+}

@@ -1,0 +1,79 @@
+.SignIn {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SignIn--bg-color {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SignIn_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-grayscale-1);
+  height: auto;
+  min-height: 15vmax;
+  width: 30vmax;
+  max-width: 400px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  box-shadow: black 1px 1px 12px;
+}
+
+.SignIn_box_input > input {
+  width: 100%;
+}
+
+.SignIn_box > button {
+  width: 50%;
+  min-width: 115px;
+}
+
+.SignIn_box_title {
+  font-size: calc(18px + 2vmin);
+  margin-bottom: 10px;
+}
+
+.SignIn_box_input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+}
+
+.SignIn_box_go {
+  margin: 10px 0px 15px 0px;
+}
+
+.SignIn_box_methods {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.SignIn_box_methods > svg {
+  border: var(--color-primary) 2px solid;
+  padding: 10px;
+  margin: -5px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.SignIn_box_methods svg:hover {
+  background-color: var(--color-primary) !important;
+  color: var(--color-grayscale-1);
+  cursor: pointer;
+  transform: scale(1.25);
+}
