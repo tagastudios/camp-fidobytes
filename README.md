@@ -116,3 +116,9 @@ Use the **View Demo** button on the login screen, or sign in with `demo@example.
 - **Demo mode** — React Context plus conditional Firestore queries so the app can run without auth or backend for demos
 - **Vaccination rules** — Centralized logic in `AddDC` for status computation and warning levels
 - **Env-based config** — Firebase config loaded from environment variables for deployment and security
+
+---
+
+## License
+
+Designed by [Taga Studios](https://tagastudios.com).
